@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peter Electrical Ltd</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #121D33;
+    color: #F5F5F5;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background: #0B3D91;
+    padding: 20px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #F4B400;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #F5F5F5;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #F4B400;
+}
+
+.hero {
+    background: linear-gradient(135deg, #0B3D91, #072A63);
+    padding: 120px 0;
+    text-align: center;
+    color: #F5F5F5;
+}
+
+.hero h1 {
+    font-size: 46px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: #F4B400;
+    color: #121D33;
+    margin-right: 15px;
+}
+
+.btn-primary:hover {
+    background: #d3a300;
+    color: #fff;
+}
+
+.btn-outline {
+    border: 2px solid #F4B400;
+    color: #F4B400;
+}
+
+.btn-outline:hover {
+    background: #F4B400;
+    color: #121D33;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    color: #F4B400;
+}
+
+.about p,
+.services-grid p,
+.why-box {
+    color: #ddd;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: #1B2B4D;
+    padding: 30px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    background: #072A63;
+    color: #F4B400;
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+    color: #F4B400;
+}
+
+.why-choose {
+    background: #1B2B4D;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.why-box {
+    padding: 20px;
+    border: 1px solid #F4B400;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.why-box:hover {
+    background: #F4B400;
+    color: #121D33;
+}
+
+.cta {
+    background: linear-gradient(135deg, #0B3D91, #072A63);
+    color: #F5F5F5;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.cta h2 {
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #0B1B33;
+    color: #aaa;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container nav">
+<div class="logo">Peter Electrical Ltd</div>
+<div class="nav-links">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Projects</a>
+<a href="#">Contact</a>
+</div>
+</div>
+</header>
+
+<section class="hero">
+<div class="container">
+<h1>Powering Your Home & Business With Safe, Reliable Electrical Solutions</h1>
+<p>Professional electrical installation, maintenance, and repair services for residential, commercial, and industrial clients.</p>
+<a href="#" class="btn btn-primary">Request a Quote</a>
+<a href="#" class="btn btn-outline">Call Us Now</a>
+</div>
+</section>
+
+<section class="about">
+<div class="container">
+<div class="section-title">
+<h2>About Peter Electrical Ltd</h2>
+</div>
+<p>
+Peter Electrical Ltd is committed to delivering safe, efficient, and high-quality electrical solutions. 
+Our experienced team ensures every project meets strict safety standards and exceeds client expectations.
+</p>
+</div>
+</section>
+
+<section class="services">
+<div class="container">
+<div class="section-title">
+<h2>Our Services</h2>
+</div>
+<div class="services-grid">
+<div class="service-card">
+<h3>Residential Electrical</h3>
+<p>House wiring, lighting installation, switchboards, and repairs.</p>
+</div>
+<div class="service-card">
+<h3>Commercial Services</h3>
+<p>Office installations, maintenance contracts, inspections.</p>
+</div>
+<div class="service-card">
+<h3>Industrial Solutions</h3>
+<p>Equipment installation, system upgrades, troubleshooting.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="why-choose">
+<div class="container">
+<div class="section-title">
+<h2>Why Choose Us</h2>
+</div>
+<div class="why-grid">
+<div class="why-box">✔ Skilled & Certified Electricians</div>
+<div class="why-box">✔ Safety-Focused Approach</div>
+<div class="why-box">✔ Reliable & On-Time Delivery</div>
+<div class="why-box">✔ Competitive Pricing</div>
+</div>
+</div>
+</section>
+
+<section class="cta">
+<div class="container">
+<h2>Need a Reliable Electrician?</h2>
+<a href="#" class="btn btn-primary">Contact Us Today</a>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Peter Electrical Ltd. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

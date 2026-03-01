@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Peter Electrical Ltd</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins',sans-serif; }
+body { background:#121D33; color:#F5F5F5; }
+.container { width:90%; max-width:1200px; margin:auto; }
+header { background:#0B3D91; padding:20px 0; }
+.nav { display:flex; justify-content:space-between; align-items:center; }
+.logo { font-size:24px; font-weight:700; color:#F4B400; }
+.nav-links a { text-decoration:none; color:#F5F5F5; margin-left:25px; font-weight:500; transition:0.3s; }
+.nav-links a:hover { color:#F4B400; }
+
+.page-hero { background: linear-gradient(135deg,#0B3D91,#072A63); padding:80px 0; text-align:center; color:#F5F5F5; }
+.page-hero h1 { font-size:40px; font-weight:700; }
+
+.contact-section { padding:80px 0; }
+.contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:50px; }
+.contact-info h3 { color:#F4B400; margin-bottom:20px; }
+.contact-info p { margin-bottom:15px; color:#ddd; }
+.contact-info strong { color:#F5F5F5; }
+
+form { background:#1B2B4D; padding:40px; border-radius:8px; }
+form input, form textarea { width:100%; padding:14px; margin-bottom:20px; border:1px solid #ddd; border-radius:5px; font-size:14px; background:#0B3D91; color:#F5F5F5; }
+form textarea { resize:vertical; min-height:120px; }
+form button { background:#F4B400; color:#121D33; padding:14px 28px; border:none; border-radius:5px; font-weight:600; cursor:pointer; transition:0.3s; }
+form button:hover { background:#d3a300; color:#fff; }
+
+.cta { background: linear-gradient(135deg,#0B3D91,#072A63); color:#F5F5F5; text-align:center; padding:60px 0; }
+.btn { padding:14px 28px; text-decoration:none; border-radius:5px; font-weight:600; background:#F4B400; color:#121D33; display:inline-block; transition:0.3s; }
+.btn:hover { background:#d3a300; color:#fff; }
+
+footer { background:#0B1B33; color:#aaa; padding:30px 0; text-align:center; }
+
+@media(max-width:900px){ .contact-grid{ grid-template-columns:1fr; } }
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container nav">
+<div class="logo">Peter Electrical Ltd</div>
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="#">Projects</a>
+<a href="contact.html">Contact</a>
+</div>
+</div>
+</header>
+
+<div class="page-hero">
+<h1>Contact Us</h1>
+</div>
+
+<section class="contact-section">
+<div class="container contact-grid">
+
+<div class="contact-info">
+<h3>Get In Touch</h3>
+<p>We are ready to assist you with all your electrical needs. Reach out today for professional and reliable service.</p>
+<p><strong>Phone:</strong> +675 XXX XXX XXXX</p>
+<p><strong>Email:</strong> info@peterelectrical.com</p>
+<p><strong>Location:</strong> Port Moresby, Papua New Guinea</p>
+<p><strong>Business Hours:</strong> Monday – Friday, 8:00 AM – 5:00 PM</p>
+</div>
+
+<form>
+<input type="text" placeholder="Full Name" required>
+<input type="email" placeholder="Email Address" required>
+<input type="text" placeholder="Phone Number">
+<textarea placeholder="Your Message" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+
+</div>
+</section>
+
+<div class="cta">
+<h2>Reliable Electrical Solutions You Can Trust</h2>
+<a href="contact.html" class="btn">Contact Us Today</a>
+</div>
+
+<footer>
+<p>© 2026 Peter Electrical Ltd. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
