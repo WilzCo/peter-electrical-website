@@ -16,7 +16,7 @@
 }
 
 body {
-    background-color: #121D33;
+    background-color: #111111;
     color: #F5F5F5;
 }
 
@@ -26,9 +26,12 @@ body {
     margin: auto;
 }
 
+/* ================= HEADER ================= */
+
 header {
-    background: #0B3D91;
+    background: #111111;
     padding: 20px 0;
+    border-bottom: 1px solid #222;
 }
 
 .nav {
@@ -40,7 +43,7 @@ header {
 .logo {
     font-size: 24px;
     font-weight: 700;
-    color: #F4B400;
+    color: #E30613;
 }
 
 .nav-links a {
@@ -49,17 +52,24 @@ header {
     margin-left: 25px;
     font-weight: 500;
     transition: 0.3s;
+    padding-bottom: 5px;
 }
 
 .nav-links a:hover {
-    color: #F4B400;
+    color: #E30613;
 }
 
+.nav-links a.active {
+    color: #E30613;
+    border-bottom: 2px solid #E30613;
+}
+
+/* ================= HERO ================= */
+
 .hero {
-    background: linear-gradient(135deg, #0B3D91, #072A63);
+    background: linear-gradient(135deg, #111111, #1a1a1a);
     padding: 120px 0;
     text-align: center;
-    color: #F5F5F5;
 }
 
 .hero h1 {
@@ -70,9 +80,11 @@ header {
 
 .hero p {
     font-size: 18px;
-    color: #ddd;
+    color: #ccc;
     margin-bottom: 30px;
 }
+
+/* ================= BUTTONS ================= */
 
 .btn {
     padding: 14px 28px;
@@ -84,25 +96,26 @@ header {
 }
 
 .btn-primary {
-    background: #F4B400;
-    color: #121D33;
+    background: #E30613;
+    color: #fff;
     margin-right: 15px;
 }
 
 .btn-primary:hover {
-    background: #d3a300;
-    color: #fff;
+    background: #b8000f;
 }
 
 .btn-outline {
-    border: 2px solid #F4B400;
-    color: #F4B400;
+    border: 2px solid #E30613;
+    color: #E30613;
 }
 
 .btn-outline:hover {
-    background: #F4B400;
-    color: #121D33;
+    background: #E30613;
+    color: #fff;
 }
+
+/* ================= SECTIONS ================= */
 
 section {
     padding: 80px 0;
@@ -115,14 +128,14 @@ section {
 
 .section-title h2 {
     font-size: 32px;
-    color: #F4B400;
+    color: #E30613;
 }
 
-.about p,
-.services-grid p,
-.why-box {
-    color: #ddd;
+.about p, .services-grid p, .why-box {
+    color: #ccc;
 }
+
+/* ================= SERVICES ================= */
 
 .services-grid {
     display: grid;
@@ -131,24 +144,27 @@ section {
 }
 
 .service-card {
-    background: #1B2B4D;
+    background: #1a1a1a;
     padding: 30px;
     border-radius: 8px;
     transition: 0.3s;
+    border: 1px solid #222;
 }
 
 .service-card:hover {
-    background: #072A63;
-    color: #F4B400;
+    background: #222;
+    transform: translateY(-5px);
 }
 
 .service-card h3 {
     margin-bottom: 15px;
-    color: #F4B400;
+    color: #E30613;
 }
 
+/* ================= WHY CHOOSE ================= */
+
 .why-choose {
-    background: #1B2B4D;
+    background: #1a1a1a;
 }
 
 .why-grid {
@@ -160,19 +176,20 @@ section {
 
 .why-box {
     padding: 20px;
-    border: 1px solid #F4B400;
+    border: 1px solid #333;
     border-radius: 8px;
     transition: 0.3s;
 }
 
 .why-box:hover {
-    background: #F4B400;
-    color: #121D33;
+    background: #E30613;
+    color: #fff;
 }
 
+/* ================= CTA ================= */
+
 .cta {
-    background: linear-gradient(135deg, #0B3D91, #072A63);
-    color: #F5F5F5;
+    background: linear-gradient(135deg, #111111, #1a1a1a);
     text-align: center;
     padding: 80px 0;
 }
@@ -181,9 +198,11 @@ section {
     margin-bottom: 20px;
 }
 
+/* ================= FOOTER ================= */
+
 footer {
-    background: #0B1B33;
-    color: #aaa;
+    background: #0d0d0d;
+    color: #777;
     padding: 30px 0;
     text-align: center;
 }
@@ -199,13 +218,15 @@ footer p {
 <header>
 <div class="container nav">
 <div class="logo">Peter Electrical Ltd</div>
+
 <div class="nav-links">
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Services</a>
-<a href="#">Projects</a>
-<a href="#">Contact</a>
+<a href="index.html" class="active">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="projects.html">Projects</a>
+<a href="contact.html">Contact</a>
 </div>
+
 </div>
 </header>
 
@@ -213,8 +234,8 @@ footer p {
 <div class="container">
 <h1>Powering Your Home & Business With Safe, Reliable Electrical Solutions</h1>
 <p>Professional electrical installation, maintenance, and repair services for residential, commercial, and industrial clients.</p>
-<a href="#" class="btn btn-primary">Request a Quote</a>
-<a href="#" class="btn btn-outline">Call Us Now</a>
+<a href="contact.html" class="btn btn-primary">Request a Quote</a>
+<a href="contact.html" class="btn btn-outline">Call Us Now</a>
 </div>
 </section>
 
@@ -224,7 +245,7 @@ footer p {
 <h2>About Peter Electrical Ltd</h2>
 </div>
 <p>
-Peter Electrical Ltd is committed to delivering safe, efficient, and high-quality electrical solutions. 
+Peter Electrical Ltd is committed to delivering safe, efficient, and high-quality electrical solutions.
 Our experienced team ensures every project meets strict safety standards and exceeds client expectations.
 </p>
 </div>
@@ -240,10 +261,12 @@ Our experienced team ensures every project meets strict safety standards and exc
 <h3>Residential Electrical</h3>
 <p>House wiring, lighting installation, switchboards, and repairs.</p>
 </div>
+
 <div class="service-card">
 <h3>Commercial Services</h3>
 <p>Office installations, maintenance contracts, inspections.</p>
 </div>
+
 <div class="service-card">
 <h3>Industrial Solutions</h3>
 <p>Equipment installation, system upgrades, troubleshooting.</p>
@@ -269,7 +292,7 @@ Our experienced team ensures every project meets strict safety standards and exc
 <section class="cta">
 <div class="container">
 <h2>Need a Reliable Electrician?</h2>
-<a href="#" class="btn btn-primary">Contact Us Today</a>
+<a href="contact.html" class="btn btn-primary">Contact Us Today</a>
 </div>
 </section>
 
