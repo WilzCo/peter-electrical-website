@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Peter Electrical Ltd</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+/* ================= GLOBAL ================= */
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins',sans-serif; }
+body { background:#111111; color:#F5F5F5; }
+.container { width:90%; max-width:1200px; margin:auto; }
+
+/* ================= HEADER ================= */
+header { background:#111111; padding:20px 0; border-bottom:1px solid #222; }
+.nav { display:flex; justify-content:space-between; align-items:center; }
+.logo { font-size:24px; font-weight:700; color:#E30613; }
+.nav-links a { text-decoration:none; color:#F5F5F5; margin-left:25px; font-weight:500; transition:0.3s; padding-bottom:5px; }
+.nav-links a:hover { color:#E30613; }
+.nav-links a.active { color:#E30613; border-bottom:2px solid #E30613; }
+
+/* ================= HERO / PAGE HEADER ================= */
+.page-hero { background: linear-gradient(135deg,#111,#1a1a1a); padding:80px 0; text-align:center; color:#F5F5F5; }
+.page-hero h1 { font-size:46px; font-weight:700; }
+
+/* ================= PROJECTS GRID ================= */
+.projects-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:30px; }
+.project-card { background:#1a1a1a; border:1px solid #222; border-radius:8px; overflow:hidden; transition:0.3s; }
+.project-card:hover { background:#222; transform:translateY(-5px); border-color:#E30613; }
+.project-card img { width:100%; height:200px; object-fit:cover; }
+.project-card-content { padding:20px; }
+.project-card-content h3 { margin-bottom:10px; color:#E30613; }
+.project-card-content p { color:#ccc; }
+
+/* ================= CTA ================= */
+.cta { background: linear-gradient(135deg,#111,#1a1a1a); color:#F5F5F5; text-align:center; padding:80px 0; }
+.btn { padding:14px 28px; text-decoration:none; border-radius:5px; font-weight:600; background:#E30613; color:#fff; display:inline-block; transition:0.3s; }
+.btn:hover { background:#b8000f; }
+
+/* ================= FOOTER ================= */
+footer { background:#0d0d0d; color:#777; padding:30px 0; text-align:center; }
+footer p { font-size:14px; }
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:900px){ .projects-grid{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+
+<header>
+<div class="container nav">
+<div class="logo">Peter Electrical Ltd</div>
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="projects.html" class="active">Projects</a>
+<a href="contact.html">Contact</a>
+</div>
+</div>
+</header>
+
+<div class="page-hero">
+<h1>Our Projects</h1>
+</div>
+
+<section>
+<div class="container projects-grid">
+  <div class="project-card">
+    <img src="images/project1.jpg" alt="Project 1">
+    <div class="project-card-content">
+      <h3>Residential Wiring</h3>
+      <p>Complete home electrical installation with modern safety systems.</p>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="images/project2.jpg" alt="Project 2">
+    <div class="project-card-content">
+      <h3>Commercial Office Setup</h3>
+      <p>Electrical installation and lighting systems for a corporate office.</p>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="images/project3.jpg" alt="Project 3">
+    <div class="project-card-content">
+      <h3>Industrial Machinery Installation</h3>
+      <p>High-capacity electrical solutions for industrial equipment.</p>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="images/project4.jpg" alt="Project 4">
+    <div class="project-card-content">
+      <h3>Lighting Upgrades</h3>
+      <p>Energy-efficient lighting installations for commercial buildings.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<div class="cta">
+<h2>Let’s Power Your Next Project</h2>
+<a href="contact.html" class="btn">Contact Us Today</a>
+</div>
+
+<footer>
+<p>© 2026 Peter Electrical Ltd. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
